@@ -8,7 +8,7 @@ function App(props) {
   const subject = props.subject;
   console.log(props);
   return (
-    // {className viene siendo un atribuyo}
+    // {className viene siendo un atributo}
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
