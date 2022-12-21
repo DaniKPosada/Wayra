@@ -1,25 +1,24 @@
+//declaraciones import
+//permiten a App.js utilizar código que ha sido definido en otra parte
+import React from 'react';//biblioteca react
 import logo from './logo.svg';
 import './App.css';
-
-function App() {
+//componente App pascalCase para no confundir con html 
+function App(props) {
+  const subject = props.subject;
+  console.log(props);
   return (
+    // {className viene siendo un atribuyo}
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        ¡Hola, {subject}!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
       </header>
     </div>
   );
 }
-
+//declaración export
 export default App;
